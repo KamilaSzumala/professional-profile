@@ -1,0 +1,84 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Kamila's Career Map in Science & Technology"
+
+description: >- # this means to ignore newlines until "baseurl:"
+  Welcome to the professional portfolio of Kamila Szumała. 
+  I am a bioinformatician with expertise in multiomics research (epigenomics, genomics, transcriptomics) and a strong foundation in 
+  molecular biology and genetic engineering. My experience spans wet-lab techniques as well as computational approaches to model 
+  biological systems and analyze complex data. Additionally, I am advancing my skills in data science, machine learning, DevOps and cloud technologies
+  to enhance bioinformatic workflows and research scalability. 
+  Explore my research, projects, and collaborations. Contact me for potential collaborations or inquiries.
+
+contact:
+  phone: "+48 518 165 308"
+  email_1: kamila.szumala2000@gmail.com
+  email_2: kamila.szumala@polsl.pl
+  address: "Chorzów, Silesia, Poland"
+
+image: "/assets/images/cv_szumala.jpg"  # Ścieżka do zdjęcia profilowego
+
+social_links:
+  linkedin: "linkedin.com/in/kamila-szumała-805766282"
+  github: "https://github.com/KamilaSzumala"
+  researchgate: "https://www.researchgate.net/profile/Kamila-Szumala"
+
+seo:
+  keywords: "bioinformatics, multiomics, genomics, transcriptomics, data science, AI, machine learning"
+  google_analytics: "UA-XXXXXXX-X" # Jeśli chcesz dodać Google Analytics
+
+language: "en"
+
+# assets:
+#   css:
+#     - "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" # Zewnętrzny CSS
+  # js:
+  #   - "https://code.jquery.com/jquery-3.5.1.slim.min.js"  # Zewnętrzny JS
+  #   - "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+  #   - "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+
+# pages:
+#   - name: "About Me"
+#     path: "about.md"  # Ścieżka do pliku
+#   - name: "Publications"
+#     path: "publications.md"
+
+# Build settings
+theme: minima
+
+collections:
+  publications:
+    output: true  # Umożliwia generowanie stron z kolekcji
+  projects:
+    output: true
+
+markdown: kramdown  # Można użyć np. 'redcarpet', ale 'kramdown' jest domyślny i rekomendowany
+kramdown:
+  input: GFM  # 'GitHub Flavored Markdown', jeśli używasz GitHub Pages
+  hard_wrap: true  # Automatyczne łamanie linii
+
+plugins:
+  - jekyll-feed
+  # - jekyll-sitemap
+  # - jekyll-seo-tag
+
+watch: true
+

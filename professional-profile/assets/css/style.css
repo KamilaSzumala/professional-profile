@@ -1,0 +1,144 @@
+.navbar {
+    background-color: #5a8cb6; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: white; 
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+
+h2 {
+    text-align: center; /* Justowanie tekstu */
+    margin: 20px; /* Usunięcie marginesów */
+    padding: 0; /* Usunięcie paddingu */
+}
+
+.contact-info {
+    text-align: left; /* Wyśrodkowanie tekstu w sekcji */
+    font-size: 1rem; /* Rozmiar czcionki */
+    margin-top: 10px; /* Odstęp od nagłówka */
+}
+
+.contact-info p {
+    margin: 5px 0; /* Odstępy między wierszami */
+}
+
+/* Linki w sekcji kontaktowej */
+.contact-info a {
+    color: #5a8cb6; /* Kolor linków */
+    text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Podkreślenie linku po najechaniu */
+}
+
+.img-container {
+    display: flex;         
+    justify-content: center;  
+    align-items: center;   
+}
+
+.profile-image {
+    width: 200px;             /* Maksymalna szerokość zdjęcia */
+    height: 200px;            /* Maksymalna wysokość zdjęcia */
+    border-radius: 50%;       /* Zaokrąglenie, aby zdjęcie było okrągłe */
+    object-fit: cover;        /* Zapewnia, że zdjęcie wypełni całe koło */
+    border: 3px solid #fff;  
+}
+
+@media (max-width: 767.98px) {
+    /* Usuń odstęp na małych ekranach */
+    .contact-info {
+        padding-left: 0;
+        text-align: center; /* Opcjonalnie wyrównaj tekst na środku na małych ekranach */
+    }
+}
+
+.description {
+    text-align: justify; /* Wyśrodkowanie tekstu */
+    margin: 20px auto;
+    /* margin: 20px; Odstęp od nagłówka */
+    font-size: 1.1rem;
+    color: #3f3f3f;
+    padding: 20px; /* Usunięcie paddingu */
+}
+
+.scroll-container {
+    display: flex;
+    overflow-x: hidden; /* Ukrycie domyślnego paska przewijania */
+    white-space: nowrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.scroll-container .card {
+    min-width: 200px;
+    flex: 0 0 auto;
+}
+
+.scroll-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    padding: 10px;
+    background: #ffffffcc;
+    border-radius: 50%;
+}
+
+.scroll-arrow:hover {
+    background: #c8c8c8e6;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.card {
+    flex: 0 0 250px;
+    max-height: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 8px #00000033;
+    transition: transform 0.2s;
+}
+
+.card img {
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+}
+.card-body{
+    flex-grow: 1;
+    overflow: hidden;
+}
+.card:hover {
+    transform: scale(1.05); /* Powiększa kartę przy najechaniu */
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+}
