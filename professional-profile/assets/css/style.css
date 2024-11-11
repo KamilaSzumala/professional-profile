@@ -44,14 +44,14 @@ h2 {
 }
 
 .profile-image {
-    width: 200px;             /* Maksymalna szerokość zdjęcia */
-    height: 200px;            /* Maksymalna wysokość zdjęcia */
+    width: 280px;             /* Maksymalna szerokość zdjęcia */
+    height: 280px;            /* Maksymalna wysokość zdjęcia */
     border-radius: 50%;       /* Zaokrąglenie, aby zdjęcie było okrągłe */
     object-fit: cover;        /* Zapewnia, że zdjęcie wypełni całe koło */
     border: 3px solid #fff;  
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* Usuń odstęp na małych ekranach */
     .contact-info {
         padding-left: 0;
@@ -116,15 +116,38 @@ h2 {
     transition: transform 0.2s;
 }
 
-.card img {
-    object-fit: cover;
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9f4fc;
     height: 150px;
     width: 100%;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
+
+.icon {
+    font-size: 6rem;
+    color: #5a8cb6;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-link:hover, .card-link:focus, .card-link:active {
+    text-decoration: none;
+    color: inherit; 
+}
+
 .card-body{
     flex-grow: 1;
     overflow: hidden;
 }
+
 .card:hover {
     transform: scale(1.05); /* Powiększa kartę przy najechaniu */
 }

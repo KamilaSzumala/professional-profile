@@ -1,0 +1,179 @@
+.roadmap-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    max-width: 100%;
+}
+  
+/* each section */
+.roadmap-section {
+    flex: 1;
+    min-width: 50px;
+    max-width: 250px;
+    height: 100vh;
+    overflow: hidden;
+    transition: flex 0.4s ease, max-width 0.4s ease, visibility 0.4s ease;
+    position: relative;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px #0000001a;
+    padding: 10px 20px 10px 10px;
+    color: #fff;
+    cursor: pointer;
+    visibility: visible;
+}
+
+/* collapsed */
+.roadmap-section.collapsed {
+    max-width: 5%;
+    opacity: 0.7;
+}
+
+.roadmap-section.collapsed .skills {
+    visibility: hidden;
+}
+
+/* expended */
+.roadmap-section.expanded {
+    max-width: 80%;
+    visibility: visible;
+}
+
+.roadmap-section:hover {
+    box-shadow: 0px 8px 12px #00000033;
+  }
+.section-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 70px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-weight: bold;
+    text-align: right;
+    background-color: #888; 
+    white-space: nowrap;
+    
+}
+
+/* Zawartość */
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-right: 60px;
+}
+
+/* Skill Bubbles */
+.skill {
+    padding: 8px;
+    color: #fff;
+    background-color: #888;
+    border-radius: 5px;
+    text-align: center;
+    flex: 1 1 100px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+    background-color: #dcdcdc; /* Kolor przy najechaniu na umiejętność */
+  }
+  
+
+/* section */
+.roadmap-section[data-color="blue"] .section-header,
+.roadmap-section[data-color="blue"] .skill {
+    background-color: #3e6d92; /* bioinformatics */
+}
+  
+.roadmap-section[data-color="orange"] .section-header,
+.roadmap-section[data-color="orange"] .skill {
+    background-color: #FF9F43; /* Analysis */
+}
+
+.roadmap-section[data-color="green"] .section-header,
+.roadmap-section[data-color="green"] .skill {
+    background-color: #4e6457; /*  DevOps */
+}
+
+.skill[data-level="beginner"] {
+    opacity: 0.4;
+}
+  
+.skill[data-level="intermediate"] {
+    opacity: 0.6;
+}
+  
+.skill[data-level="advanced"] {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+
+    .roadmap-container {
+        flex-direction: column; 
+    }
+
+    .roadmap-section {
+        flex: 1;
+        transition: flex 0.4s ease, max-height 0.4s ease, visibility 0.4s ease;
+        position: relative;
+        cursor: pointer;
+
+    }
+
+    .roadmap-section.collapsed {
+        max-height: 50px;
+        max-width: 100%;
+        padding: 0;
+        margin-bottom: 5px;
+        opacity: 0.7;
+    }
+
+    .roadmap-section.collapsed .skills {
+        visibility: hidden;
+    }
+
+    /* expended section*/
+    .roadmap-section.expanded {
+        min-height: 100vh; 
+        max-width: 100%; 
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    /* Nagłówek sekcji - umieszczony na górze, jeden nad drugim */
+    .section-header {
+        position: relative;
+        width: 100%; /* Nagłówek zajmuje całą szerokość */
+        writing-mode: horizontal-tb; /* Nagłówek w poziomie */
+        transform: rotate(0); /* Nagłówek nie obracany */
+        padding: 10px;
+        text-align: left; /* Wyrównanie do lewej strony */
+        font-weight: bold;
+        color: #fff;
+    }
+
+    /* W każdym expanderze zwiększamy wysokość dla lepszej widoczności */
+    .skills {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        padding-right: 0;
+    }
+
+    .skill {
+        padding: 8px;
+        color: #fff;
+        background-color: #888;
+        border-radius: 5px;
+        text-align: center;
+        flex: 1 1 100px;
+        font-weight: bold;
+        
+    }
+}

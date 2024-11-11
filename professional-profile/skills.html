@@ -1,0 +1,46 @@
+---
+layout: page
+premalink: /skills/
+---
+
+
+<link rel="stylesheet" href="{{ '/assets/css/skills.css' | relative_url }}">
+
+<div class="roadmap-container">
+    <!-- Bioinformatics -->
+    <div class="roadmap-section" id="bioinformatics" data-color="blue" onclick="toggleSection('bioinformatics')">
+        <div class="section-header">
+            <h3>Bioinformatics</h3>
+        </div>
+        <div class="skills">
+            <div class="skill" data-level="intermediate">Genomics Analysis</div>
+            <div class="skill" data-level="beginner">Sequence Alignment</div>
+            <div class="skill" data-level="advanced">Trancriptomics</div>
+        </div>
+    </div>
+
+    <!-- Analysis skills -->
+    <div class="roadmap-section" id="analysis" data-color="orange" onclick="toggleSection('analysis')">
+        <div class="section-header">
+            <h3>Analysis</h3>
+        </div>
+        <div class="skills">
+            <div class="skill" data-level="advanced">Machine Learning</div>
+            <div class="skill" data-level="advanced">Data Visualization</div>
+            <div class="skill" data-level="intermediate">Deep Learning</div>
+        </div>
+    </div>
+
+    <!-- Sekcja DevOps -->
+    <div class="roadmap-section" id="devops" data-color="green" onclick="toggleSection('devops')">
+        <div class="section-header">
+            <h3>DevOps</h3>
+        </div>
+        <div class="skills">
+            <div class="skill" data-level="advanced">Docker</div>
+            <div class="skill" data-level="beginner">CI/CD</div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/skills.js' | relative_url }}"></script>
