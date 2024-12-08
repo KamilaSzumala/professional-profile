@@ -53,8 +53,22 @@
     font-weight: bold;
     text-align: right;
     background-color: #888; 
-    white-space: nowrap;
-    
+    white-space: nowrap; 
+}
+
+.skills-container {
+    max-height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none; 
+}
+
+.section-subheader {
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
 }
 
 /* Zawartość */
@@ -62,8 +76,15 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-bottom: 20px;
     padding-right: 60px;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center; /* Elementy wyśrodkowane poziomo */
+    flex-wrap: wrap; /* Umiejętności w wielu wierszach, jeśli brak miejsca */
+    gap: 10px; /* Odstępy między umiejętnościami */
 }
 
 /* Skill Bubbles */

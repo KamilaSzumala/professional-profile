@@ -9,38 +9,228 @@ premalink: /skills/
 <div class="roadmap-container">
     <!-- Bioinformatics -->
     <div class="roadmap-section" id="bioinformatics" data-color="blue" onclick="toggleSection('bioinformatics')">
-        <div class="section-header">
-            <h3>Bioinformatics</h3>
-        </div>
-        <div class="skills">
-            <div class="skill" data-level="intermediate">Genomics Analysis</div>
-            <div class="skill" data-level="beginner">Sequence Alignment</div>
-            <div class="skill" data-level="advanced">Trancriptomics</div>
+        <div class="section-header"><h3>Bioinformatics</h3></div>
+
+        <div class="skills-container">
+            <div class="section-subheader"><h2>Programming Languages</h2></div>
+            <div class="skills" id="programming-languages">
+                <div class="skill" data-level="intermediate">Python</div>
+                <div class="skill" data-level="advanced">R</div>
+                <div class="skill" data-level="intermediate">MATLAB</div>
+            </div>
+
+            <div class="section-subheader"><h2>Biological Background</h2></div>
+            <div class="skills" id="biology">
+                <div class="skill" data-level="advanced">Molecular biology</div>
+                <div class="skill" data-level="beginner">Genetics</div>
+                <div class="skill" data-level="beginner">Systems Biology</div>
+            </div>
+
+            <div class="section-subheader"><h2>Omics Analysis</h2></div>
+            <div class="skills" id="omics">
+                <div class="skill" data-level="intermediate">Genomics</div>
+                <div class="skill" data-level="advanced">Transcriptomics</div>
+                <div class="skill" data-level="beginner">Proteomics</div>
+                <div class="skill" data-level="intermediate">Metabolomics</div>
+                <div class="skill" data-level="beginner">Epigenomics</div>
+            </div>
+
+            <div class="section-subheader"><h2>Variant Analysis</h2></div>
+            <div class="skills" id="VA">
+                <div class="skill" data-level="intermediate">SNV/DNV/indels</div>
+                <div class="skill" data-level="intermediate">CNV</div>
+                <div class="skill" data-level="beginner">Structural Variant</div>
+            </div>
+
+            <div class="section-subheader"><h2>Karyotyping & Cytogenetics</h2></div>
+            <div class="skills" id="karyotyping">
+                <div class="skill" data-level="beginner">Karyotype Analysis</div>
+                <div class="skill" data-level="beginner">Chromosomal Rearrangements</div>
+            </div>
+            
+            <div class="section-subheader"><h2>Bioinformastics Frameworks & Pipelines</h2></div>
+            <div class="skills" id="bioinformatics-frameworks">
+                <div class="skill" data-level="intermediate">Bioconductor</div>
+                <div class="skill" data-level="intermediate">Creating packages in R</div>
+                <div class="skill" data-level="beginner">Nextflow</div>
+                <div class="skill" data-level="intermediate">Snakemake</div>
+            </div>
+
+            <div class="section-subheader"><h2>Databases</h2></div>
+            <div class="skills" id="databases">
+                <div class="skill" data-level="intermediate">NCBI</div>
+                <div class="skill" data-level="intermediate">Ensembl</div>
+                <div class="skill" data-level="beginner">UCSC Genome Browser</div>
+                <div class="skill" data-level="advanced">KEGG</div>
+                <div class="skill" data-level="advanced">Reactome</div>
+                <div class="skill" data-level="beginner">Gene Ontology</div>
+            </div>
+
+            <div class="section-subheader"><h2>Data Visualization</h2></div>
+            <div class="skills" id="data-visualization">
+                <div class="skill" data-level="advanced">ggplot2</div>
+                <div class="skill" data-level="intermediate">Plotly</div>
+                <div class="skill" data-level="beginner">Seaborn</div>
+            </div>
+
+            <div class="section-subheader"><h2>Reporting</h2></div>
+            <div class="skills" id="reporting">
+                <div class="skill" data-level="advanced">RMarkdown</div>
+                <div class="skill" data-level="intermediate">Jupyter Notebooks</div>
+                <div class="skill" data-level="beginner">LaTeX</div>
+                <div class="skill" data-level="advanced">Streamlit</div>
+                <div class="skill" data-level="intermediate">Shiny</div>
+            </div>
+
+            <div class="section-subheader"><h2>Biomedical Engineering</h2></div>
+            <div class="skills" id="biomedical-engineering">
+                <div class="skill" data-level="intermediate">DICOM</div>
+                <div class="skill" data-level="beginner">HL7</div>
+                <div class="skill" data-level="beginner">Signal processing</div>
+                <div class="skill" data-level="advanced">Biostatistics</div>
+            </div>
         </div>
     </div>
 
     <!-- Analysis skills -->
     <div class="roadmap-section" id="analysis" data-color="orange" onclick="toggleSection('analysis')">
-        <div class="section-header">
-            <h3>Analysis</h3>
-        </div>
-        <div class="skills">
-            <div class="skill" data-level="advanced">Machine Learning</div>
-            <div class="skill" data-level="advanced">Data Visualization</div>
-            <div class="skill" data-level="intermediate">Deep Learning</div>
+        <div class="section-header"><h3>Data Science</h3></div>
+
+        <div class="skills-container">
+            <div class="section-subheader"><h2>Statistics</h2></div>
+            <div class="skills" id="statistics">
+                <div class="skill" data-level="intermediate">Hypothesis Testing</div>
+                <div class="skill" data-level="intermediate">Pobability abd Sampling</div>
+                <div class="skill" data-level="intermediate">Increasing Test Sensitivity</div>
+                <div class="skill" data-level="intermediate">Ratio Metrics</div>
+            </div>
+
+            <div class="section-subheader"><h2>Econometrics</h2></div>
+            <div class="skills" id="econometrics">
+                <div class="skill" data-level="advanced">Regression</div>
+                <div class="skill" data-level="advanced">Correlation</div>
+                <div class="skill" data-level="advanced">Timeseries</div>
+                <div class="skill" data-level="intermediate">Fitting Distribution</div>
+                <div class="skill" data-level="beginner">Bayesian Statistics</div>
+            </div>
+
+            <div class="section-subheader"><h2>Exploratory Data Analysis</h2></div>
+            <div class="skills" id="exp">
+                <div class="skill" data-level="advanced">Data Understanding</div>
+                <div class="skill" data-level="advanced">Data Analysis</div>
+                <div class="skill" data-level="advanced">Data Vizualization</div>
+            </div>
+
+            <div class="section-subheader"><h2>Data Cleanup</h2></div>
+            <div class="skills" id="cleanup">
+                <div class="skill" data-level="advanced">Handling Missing Data</div>
+                <div class="skill" data-level="advanced">Removing Duplicates</div>
+                <div class="skill" data-level="intermediate">Finding Outliers</div>
+                <div class="skill" data-level="intermediate">Data Tramsformation</div>
+                <div class="skill" data-level="intermediate">Data Normalization</div>
+            </div>
+
+            <div class="section-subheader"><h2>Machine Learning</h2></div>
+            <div class="skills" id="ML">
+                <div class="skill" data-level="advanced">Feature selection/ extraction</div>
+                <div class="skill" data-level="advanced">Supervised Learning</div>
+                <div class="skill" data-level="advanced">Unsupervised Learning</div>
+                <div class="skill" data-level="advanced">Model Evaluation</div>
+            </div>
+
+            <div class="section-subheader"><h2>Deep Learning</h2></div>
+            <div class="skills" id="DL">
+                <div class="skill" data-level="beginner">Neural Networks</div>
+                <div class="skill" data-level="beginner">CNN</div>
+                <div class="skill" data-level="beginner">RNN</div>
+                <div class="skill" data-level="beginner">Pytorch</div>
+            </div>
         </div>
     </div>
 
     <!-- Sekcja DevOps -->
     <div class="roadmap-section" id="devops" data-color="green" onclick="toggleSection('devops')">
-        <div class="section-header">
-            <h3>DevOps</h3>
+        <div class="section-header"><h3>DevOps</h3></div>
+
+        <div class="skills-container">
+            <div class="section-subheader"><h2>Programming Languages</h2></div>
+            <div class="skills" id="programming-languages">
+                <div class="skill" data-level="intermediate">Python</div>
+                <div class="skill" data-level="beginner">Java</div>
+                <div class="skill" data-level="beginner">JavaScript</div>
+                <div class="skill" data-level="beginner">C++</div>
+                <div class="skill" data-level="intermediate">Shell scripting (Bash, PowerShell)</div>
+            </div>
+
+            <div class="section-subheader"><h2>Frontend</h2></div>
+            <div class="skills" id="frontend">
+                <div class="skill" data-level="intermediate">HTML</div>
+                <div class="skill" data-level="intermediate">CSS</div>
+                <div class="skill" data-level="beginner">React</div>
+            </div>  
+
+            <div class="section-subheader"><h2>Containerization & Orchestration</h2></div>
+            <div class="skills" id="containerization">
+                <div class="skill" data-level="intermediate">Docker</div>
+                <div class="skill" data-level="beginner">Kubernetes</div>
+            </div>
+
+            <div class="section-subheader"><h2>Databases</h2></div>
+            <div class="skills" id="databases">
+                <div class="skill" data-level="intermediate">MySQL</div>
+                <div class="skill" data-level="intermediate">PostgreSQL</div>
+                <div class="skill" data-level="intermediate">MongoDB</div>
+                <div class="skill" data-level="beginner">ElasticSearch</div>
+            </div>
+
+            <div class="section-subheader"><h2>Version Control Systems</h2></div>
+            <div class="skills" id="vcs">
+                <div class="skill" data-level="intermediate">Git</div>
+            </div>
+
+            <div class="section-subheader"><h2>VCS Hosting</h2></div>
+            <div class="skills" id="vcs-hosting">
+                <div class="skill" data-level="advanced">GitHub</div>
+                <div class="skill" data-level="beginner">GitLab</div>
+                <div class="skill" data-level="intermediate">Bitbucket</div>
+            </div>
+
+            <div class="section-subheader"><h2>CI/CD</h2></div>
+            <div class="skills" id="cicd">
+                <div class="skill" data-level="beginner">GitHub Actions</div>
+            </div>
+
+            <div class="section-subheader"><h2>Networking & Protocols</h2></div>
+            <div class="skills" id="networking">
+                <div class="skill" data-level="beginner">HTTP</div>
+                <div class="skill" data-level="intermediate">TCP/IP</div>
+                <div class="skill" data-level="beginner">DNS</div>
+                <div class="skill" data-level="intermediate">SSH</div>
+            </div>
+
+            <div class="section-subheader"><h2>Cloud Computing</h2></div>
+            <div class="skills" id="cloud">
+                <div class="skill" data-level="beginner">AWS</div>
+                <div class="skill" data-level="beginner">Azure</div>
+                <div class="skill" data-level="beginner">Google Cloud</div>
+            </div>
+            
+            <div class="section-subheader"><h2>Monitoring</h2></div>
+            <div class="skills" id="monitoring">
+                <div class="skill" data-level="beginner">Prometheus</div>
+                <div class="skill" data-level="beginner">Grafana</div>
+            </div>
+            
+            <div class="section-subheader"><h2>Soft Skills</h2></div>
+            <div class="skills" id="soft-skills">
+                <div class="skill" data-level="advanced">Agile Practices</div>
+                <div class="skill" data-level="advanced">Problem Solving</div>
+                <div class="skill" data-level="advanced">Time Management</div>
+                <div class="skill" data-level="advanced">Communication</div>
+            </div> 
         </div>
-        <div class="skills">
-            <div class="skill" data-level="advanced">Docker</div>
-            <div class="skill" data-level="beginner">CI/CD</div>
-        </div>
-    </div>
+    </div> 
+
 </div>
 
 <script src="{{ '/assets/js/skills.js' | relative_url }}"></script>
